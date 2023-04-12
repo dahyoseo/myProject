@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Mono:wght@200&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;400;600;700;900&family=PT+Serif:ital@1&family=Poiret+One&family=Source+Code+Pro:ital,wght@0,300;1,300&family=Space+Mono:ital,wght@1,700&display=swap');
+*{
+    margin: 0px auto;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Noto Sans KR';
+    color: #333;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+.box{
+    position: fixed;
+    /* background-color: lightskyblue; */
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+.logo{
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    /* margin-top: 15px; */
+    margin-left: 30px;
+    text-align: center;
+    float: left;
+}
+.logo img{
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.menu{
+    /* background-color: lightsalmon; */
+    float: right;
+    width: 500px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    
+}
+.menu li{
+    float: left;
+    /* padding-left: 80px; */
+    width: 150px;
+    height: 70px;
+}
+.menu a{
+    /* padding-left: 10px; */
+   font-weight: 300;
+   margin-left: 5px;
+
+   /* width: 150px; */
+}
+.menu a:hover{
+    background-color: thistle;
+}
+.main{
+    width: 100%;
+    height: 740px;
+    /* background-color: lightgreen; */
+}
+.main video{
+    /* width: 1900px;
+    height: 600px; */
+    width: 1500px;
+    margin-left: 200px;
+    /* height: 700px; */
+    
+}
+.contents{
+    width: 100%;
+    height: 1000px;
+    /* background-color: lightpink; */
+}
+.notice div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: 'Noto Sans KR';
+    /* font-weight: bold; */
+    margin-top: 70px;
+    color: #777;
+}
+.notice ul {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.notice ul li{
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+.notice ul li:hover{
+    background-color: #777;
+}
+.notice ul li a:hover{
+    color: #fff;
+}
+.bris{
+    display: none;
+} 
+.gallery div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: 'Noto Sans KR';
+    /* font-weight: bold; */
+    margin-top: 70px;
+    color: #777;
+}
+.gallery ul{
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-right: 200px;
+}
+.gallery ul li{
+    /* float: left; */
+    display: inline-block;
+    margin: 7px;
+}
+.gallery ul li img{
+    width: 800px;
+    height: 450px;
+}
+.gallery ul li img:hover{
+    opacity: 0.7;
+}
+
+/* 모달 */
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+
+.modal_up{
+    text-align: center;
+}
+.upbody img{
+    width: 600px;
+    margin-top: 20px;
+}
+.btn{
+    position: absolute;
+    top: 12px;
+    left: 1260px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn i{
+    color: rgb(206, 206, 206);
+}
+
+.map{
+    width: 100%;
+    height: 500px;
+    background-color: thistle;
+}
+footer{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    /* background-color: khaki; */
+    bottom: 0px;
+}
+.copy{
+    float: left;
+    /* text-align: center; */
+    line-height: 70px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.sns{
+    float: right;
+    /* margin-left: 20px; */
+    margin-right: 30px;
+}
+.sns li {
+    /* position: absolute; */
+    float: right;
+    margin: 0px 5px;
+   /* margin-left: 30px; */
+}
+.sns li a {
+    font-size: 30px;
+    /* text-align: center; */
+    /* background-color: #fff; */
+    line-height: 70px;
+    /* margin-left: 50px; */
+}
+.sns li a:hover{
+    opacity: 0.3;
+}
