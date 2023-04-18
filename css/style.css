@@ -7,6 +7,9 @@
     font-family: 'Noto Sans KR';
     color: #333;
 }
+/* html {
+    scroll-behavior: smooth;
+} */
 body{
     width: 100%;
     height: 100%;
@@ -24,7 +27,7 @@ a{
     background-color: #fff;
     width: 100%;
     height: 70px;
-    z-index: 10;
+    z-index: 100;
 }
 .logo{
     background-color: #fff;
@@ -58,7 +61,7 @@ a{
 }
 .menu a{
     /* padding-left: 10px; */
-   font-weight: 300;
+   font-weight: 400;
    margin-left: 5px;
 
    /* width: 150px; */
@@ -68,32 +71,43 @@ a{
 }
 .main{
     width: 100%;
-    height: 740px;
-    /* background-color: lightgreen; */
+    height: 540px;
+}
+.main a{
+    float: left;
 }
 .main video{
-    /* width: 1900px;
-    height: 600px; */
-    width: 1500px;
-    margin-left: 200px;
-    /* height: 700px; */
-    
+    width: 951px;
+    margin-left: 450px;
+    margin: 0px;
 }
+.main div{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #f6f6f6;
+    z-index: 10;
+    top: 500px;
+}
+
 .contents{
     width: 100%;
     height: 1000px;
-    /* background-color: lightpink; */
 }
 .notice div{
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 7px;
+    background-color: thistle;
     text-align: center;
-    line-height: 100px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 25px;
     font-family: 'Noto Sans KR';
-    /* font-weight: bold; */
-    margin-top: 70px;
-    color: #777;
+    font-weight: bold;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    border: 1px solid #333;
+    border-top: -30px;
+    
 }
 .notice ul {
     margin-left: 200px;
@@ -105,25 +119,57 @@ a{
     padding: 10px;
     text-align: center;
 }
-.notice ul li:hover{
-    background-color: #777;
+
+h1{
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
 }
-.notice ul li a:hover{
-    color: #fff;
+h1:hover{
+    color: thistle;
 }
 .bris{
     display: none;
+    margin-bottom: 30px;
 } 
+.n_btn i{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bris2{
+    display: none;
+    margin-bottom: 30px;
+}
+.bris2 img{
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bris3{
+    display: none;
+    margin-bottom: 30px;
+}
+.bris4{
+    display: none;
+    margin-bottom: 30px;
+}
+
 .gallery div{
-    width: 200px;
-    height: 50px;
+    width: 80px;
+    height: 7px;
+    background-color: thistle;
     text-align: center;
-    line-height: 100px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 25px;
     font-family: 'Noto Sans KR';
-    /* font-weight: bold; */
-    margin-top: 70px;
-    color: #777;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    /* color: #777; */
+    border: 1px solid #333;
+    border-top: -30px;
 }
 .gallery ul{
     margin-left: 200px;
@@ -131,13 +177,13 @@ a{
     margin-right: 200px;
 }
 .gallery ul li{
-    /* float: left; */
     display: inline-block;
     margin: 7px;
+    margin-bottom: 200px;
 }
 .gallery ul li img{
-    width: 800px;
-    height: 450px;
+    width: 600px;
+    height: 350px;
 }
 .gallery ul li img:hover{
     opacity: 0.7;
@@ -150,7 +196,7 @@ a{
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 15;
+    z-index: 150;
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
 }
@@ -186,33 +232,25 @@ footer{
     position: fixed;
     width: 100%;
     height: 70px;
-    /* background-color: khaki; */
     bottom: 0px;
 }
 .copy{
     float: left;
-    /* text-align: center; */
     line-height: 70px;
     margin-left: 30px;
     font-size: 12px;
 }
 .sns{
     float: right;
-    /* margin-left: 20px; */
     margin-right: 30px;
 }
 .sns li {
-    /* position: absolute; */
     float: right;
     margin: 0px 5px;
-   /* margin-left: 30px; */
 }
 .sns li a {
     font-size: 30px;
-    /* text-align: center; */
-    /* background-color: #fff; */
     line-height: 70px;
-    /* margin-left: 50px; */
 }
 .sns li a:hover{
     opacity: 0.3;
